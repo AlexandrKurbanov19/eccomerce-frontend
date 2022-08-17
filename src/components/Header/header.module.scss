@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.2),
+    0px 3px 4px rgba(0,0,0,0.25),
+    0px 7px 8px rgba(0,0,0,0.05),
+    0px 14px 16px rgba(0,0,0,0.03),
+    0px 40px 45px rgba(0,0,0,0.04);
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navList {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo {
+        text-decoration: none;
+        color: "#21259";
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        color: teal;
+        cursor: pointer;
+    }
+    .navItem {
+        cursor: pointer;
+    }
+    .navItem + .navItem {
+        margin-left: 30px;
+    }
+    .userActions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon {
+        font-size: 25px;
+        transition: all 0.3s ease;
+        &:hover {
+            color: teal;
+        } 
+    }
+    .icon + .icon {
+        margin-left: 20px;
+    }
+}
